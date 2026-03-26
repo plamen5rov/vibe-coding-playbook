@@ -22,8 +22,7 @@ During work:
 
 - Make minimal changes
 - Stay within scope
-- Always remind me to commit and push new changes on time - but do not commit and push without my permission
-- Never push to remote unless I explicitly send the `/push` command in chat
+- When I send `/push`, stage all changes, commit with a descriptive message, and push — no further permission needed.
 
 Never:
 

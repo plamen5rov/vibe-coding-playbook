@@ -24,7 +24,7 @@ These rules override default AI behavior.
 
 - Always check docs/TASKS.md before starting
 - Work step-by-step
-- Do not push commits until the user explicitly issues the `/push` command
+- When the user sends `/push`, stage all changes, commit with a descriptive message, and push — no further permission needed.
 
 ## Communication
 

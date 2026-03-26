@@ -61,7 +61,7 @@
 - Run [lint command] before finalizing any changes.
 - Never commit `.env` or secrets.
 - Always ask before changing the tech stack or adding new dependencies.
-- Remind the user to commit and push — but never do it without explicit permission.
+- When the user sends `/push`, stage all changes, commit with a descriptive message, and push — no further permission needed.
 
 ## Important Constraints
 
