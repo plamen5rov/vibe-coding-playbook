@@ -37,6 +37,54 @@ That's it. Read section 0 first, then proceed through the guide in order.
 
 ---
 
+## Guide
+
+### [0. What is Vibe Coding?](sections/00-what-is-vibe-coding.md)
+
+The mental model — what the AI can and can't do, the human-agent loop, common misconceptions.
+
+### [1. Git & GitHub](sections/01-git-github.md)
+
+How to set up your repo, what to commit vs ignore, and why feature branches matter even when working solo.
+
+### [2. Context Files](sections/02-context-files.md)
+
+The files to create before your first session — `AGENTS.md`, `PROJECT.md`, `TASKS.md` — what goes in them and how long they should be.
+
+### [3. Best Practices](sections/03-best-practices.md)
+
+Slash commands, agents, MCP servers, `CHANGELOG.md`, security hygiene, and the habits that separate effective vibe coders from frustrated ones.
+
+### [4. Workflow](sections/04-workflow.md)
+
+The per-session loop: plan first, work in small steps, commit frequently, clear context between tasks. Includes a quick-reference checklist.
+
+### [5. OpenCode vs Claude Code](sections/05-opencode-vs-claude-code.md)
+
+Side-by-side feature comparison, tool-specific tips, and how to run both on the same project.
+
+### [6. Resources](sections/06-resources.md)
+
+Curated official docs, high-quality guides, and how to stay current as the tooling evolves quickly.
+
+### [7. Prompt Engineering](sections/07-prompt-engineering.md)
+
+How to write effective prompts — the anatomy of good requests, plan-then-execute patterns, templates for common tasks.
+
+### [8. Debugging with Agents](sections/08-debugging-with-agents.md)
+
+What to do when things break — the explain-before-fix pattern, common failure modes, when to restart vs course-correct.
+
+### [9. Project Types](sections/09-project-types.md)
+
+How to start different projects — web app, API, CLI tool, script, library. Starter checklists for each type.
+
+### [10. Cost and Models](sections/10-cost-and-models.md)
+
+Managing API costs, choosing the right model for the task, local vs cloud trade-offs, cost-saving strategies.
+
+---
+
 ## Starter Template
 
 The [`starter-template/`](starter-template/) directory is a generic project scaffold you can copy into any new vibe-coding project.
