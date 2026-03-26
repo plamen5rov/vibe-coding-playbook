@@ -145,7 +145,7 @@ Don't paste file contents. Use `@filename` references:
 
 ### 2. Clear context between tasks
 
-Context you don't need costs money. Clear sessions when switching topics (section 04).
+Context you don't need costs money. Clear sessions when switching topics ([section 04](../04-workflow.md)).
 
 ### 3. Use the right model for the task
 

@@ -86,16 +86,16 @@ Overstuffing `AGENTS.md` hurts. The model deprioritizes long context. Keep `AGEN
 
 This guide is ordered to build your skills progressively:
 
-1. **Section 1** — Set up GitHub (do this first, always)
-2. **Section 2** — Create context files (critical skill)
-3. **Section 3** — Best practices (start doing these from day one)
-4. **Section 4** — The actual workflow (your session loop)
-5. **Section 5** — Tool comparison (pick your tool)
-6. **Section 6** — Resources (bookmark these)
-7. **Section 7** — Prompt engineering (how to talk to agents)
-8. **Section 8** — Debugging (what to do when things break)
-9. **Section 9** — Project types (how to start different projects)
-10. **Section 10** — Cost management (avoid overspending)
+1. **[Section 1 — GitHub](01-git-github.md)** — Set up GitHub (do this first, always)
+2. **[Section 2 — Context Files](02-context-files.md)** — Create context files (critical skill)
+3. **[Section 3 — Best Practices](03-best-practices.md)** — Best practices (start doing these from day one)
+4. **[Section 4 — Workflow](04-workflow.md)** — The actual workflow (your session loop)
+5. **[Section 5 — OpenCode vs Claude Code](05-opencode-vs-claude-code.md)** — Tool comparison (pick your tool)
+6. **[Section 6 — Resources](06-resources.md)** — Resources (bookmark these)
+7. **[Section 7 — Prompt Engineering](07-prompt-engineering.md)** — Prompt engineering (how to talk to agents)
+8. **[Section 8 — Debugging](08-debugging-with-agents.md)** — Debugging (what to do when things break)
+9. **[Section 9 — Project Types](09-project-types.md)** — Project types (how to start different projects)
+10. **[Section 10 — Cost and Models](10-cost-and-models.md)** — Cost management (avoid overspending)
 
 Read in order. Each section builds on the previous.
 
@@ -106,21 +106,21 @@ Read in order. Each section builds on the previous.
 Here's what a complete beginner session looks like:
 
 ```bash
-# 1. Create the repo (section 1)
+# 1. Create the repo
 gh repo create my-first-project --private
 git clone https://github.com/yourname/my-first-project.git
 cd my-first-project
 
-# 2. Create context files (section 2)
+# 2. Create context files
 # - AGENTS.md
 # - docs/PROJECT.md
 # - docs/TASKS.md
 # - .gitignore
 
-# 3. Start a branch (section 4)
+# 3. Start a branch
 git checkout -b feature/hello-world
 
-# 4. Run the agent (section 4)
+# 4. Run the agent
 opencode  # or: claude
 
 # 5. Tell it:
