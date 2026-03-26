@@ -203,7 +203,7 @@ except json.JSONDecodeError as exc:
 - **Goal:** Deliver the most practical guide with real workflows, templates, and actionable advice.
 - **Core Value:** No fluff, just tangible examples and checklists.
 - **Non-Goals:** No deep theory, no outdated tools, no basic programming lessons.
-- **Current Phase:** Build the initial structure, add starter template, write first version of the guide, fix markdownlint issues, and add `.gitignore` entries for `FAQ.md` and `ai_answers/`.
+- **Current Phase:** Write guide sections in `sections/`, complete `starter-template/`, and keep all docs in sync as the project grows.
 
 ## 9. When In Doubt
 
@@ -217,7 +217,7 @@ except json.JSONDecodeError as exc:
 Custom commands live in `.opencode/commands/`. The file name becomes the command name.
 
 | Command | File | Description |
-|---------|------|-------------|
+| --- | --- | --- |
 | `/push` | `.opencode/commands/push.md` | Stage, commit, and push pending changes |
 
 ### Adding Custom Commands
@@ -237,6 +237,7 @@ Use @filename to include file content.
 ```
 
 Options (frontmatter):
+
 - `description` - Shown in TUI command list
 - `agent` - Which agent should run it
 - `model` - Override default model

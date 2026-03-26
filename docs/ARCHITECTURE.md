@@ -2,29 +2,33 @@
 
 ## Repository Structure
 
-/docs       → guide content
-/.ai        → AI behavior control
-/template   → starter project
-/examples   → real implementations
+```text
+/docs        → AI instruction files (rules, conventions, tasks, project goals)
+/.ai         → AI behavior control (agents, prompts, rules)
+/sections    → guide chapters (the actual published content)
+/template    → starter project template for any vibe-coding project [Phase 1]
+/examples    → real implementation examples [Phase 2]
+```
 
 ## Content Flow
 
-1. User reads README
-2. Navigates to docs/
-3. Clones template/
-4. Applies workflow
+1. User reads README (table of contents + project overview)
+2. Navigates to `sections/` for guide chapters
+3. Clones `starter-template/` to bootstrap a new project
+4. Applies the workflow
 
 ## Evolution Plan
 
-Phase 1:
+### Phase 1 — Current
 
 - Static docs
-- Template
+- Guide sections
+- Starter template
 
-Phase 2:
+### Phase 2 — Next
 
-- Examples
+- Real implementation examples
 
-Phase 3:
+### Phase 3 — Future
 
 - Full docs site
