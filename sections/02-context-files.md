@@ -1,5 +1,7 @@
 # Context Files: Briefing the AI Before You Start
 
+![Header](pictures/02-context-files.png)
+
 The single highest-leverage thing you can do in vibe coding is create context files before the first session. An agent that knows your project's goals, tech stack, and constraints makes far fewer wrong assumptions.
 
 Both OpenCode and Claude Code auto-load these files at session start. Without them, you're starting from zero every time.

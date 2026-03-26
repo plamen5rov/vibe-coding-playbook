@@ -1,5 +1,7 @@
 # Vibe Coding Playbook
 
+![Header](pictures/README.png)
+
 A practical guide to building software with AI coding agents — specifically OpenCode and Claude Code.
 
 No theory. No fluff. Just workflows, templates, and checklists you can use today.

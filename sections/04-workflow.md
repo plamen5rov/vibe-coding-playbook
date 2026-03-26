@@ -1,5 +1,7 @@
 # Workflow: Running a Vibe Coding Session
 
+![Header](pictures/04-workflow.png)
+
 ## Starting a new project
 
 Do this once, before the first session:

@@ -1,5 +1,7 @@
 # OpenCode vs Claude Code
 
+![Header](pictures/05-opencode-vs-claude-code.png)
+
 Both tools are agentic coding assistants that read context files, run shell commands, edit files, and integrate with git. They share the same core concepts — `AGENTS.md`, slash commands, MCP servers — so skills transfer directly between them.
 
 ---

@@ -1,5 +1,7 @@
 # Git & GitHub for Vibe Coding
 
+![Header](pictures/01-git-github.png)
+
 ## Create the repo yourself — always
 
 All 10 AI models surveyed agree on this: **create the GitHub repo first, then clone locally.**
