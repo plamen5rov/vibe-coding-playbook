@@ -8,6 +8,35 @@ No theory. No fluff. Just workflows, templates, and checklists you can use today
 
 ---
 
+## Quick start (your first session)
+
+```bash
+# 1. Create a GitHub repo
+gh repo create my-first-project --private
+git clone https://github.com/yourname/my-first-project.git
+cd my-first-project
+
+# 2. Create context files (section 2)
+# Create AGENTS.md, docs/PROJECT.md, docs/TASKS.md, .gitignore
+# Or copy from starter-template/
+
+# 3. Start a branch
+git checkout -b feature/hello-world
+
+# 4. Run the agent
+opencode  # or: claude
+
+# 5. Tell it what to build
+# "Create a simple Python script that prints 'Hello, world!'"
+
+# 6. Review the output, then commit
+git add . && git commit -m "feat: hello world script"
+```
+
+That's it. Read section 00 for the mental model, then proceed through the guide in order.
+
+---
+
 ## What is vibe coding?
 
 Vibe coding (also called context coding or agentic engineering) is a development workflow where you work with an AI agent as a fast, capable junior developer. You describe goals, review output, and own the result. The agent writes code, runs commands, edits files, and commits changes.
@@ -41,6 +70,22 @@ Side-by-side feature comparison, tool-specific tips, and how to run both on the 
 ### [6. Resources](sections/06-resources.md)
 
 Curated official docs, high-quality guides, and how to stay current as the tooling evolves quickly.
+
+### [7. Prompt Engineering](sections/07-prompt-engineering.md)
+
+How to write effective prompts — the anatomy of good requests, plan-then-execute patterns, templates for common tasks.
+
+### [8. Debugging with Agents](sections/08-debugging-with-agents.md)
+
+What to do when things break — the explain-before-fix pattern, common failure modes, when to restart vs course-correct.
+
+### [9. Project Types](sections/09-project-types.md)
+
+How to start different projects — web app, API, CLI tool, script, library. Starter checklists for each type.
+
+### [10. Cost and Models](sections/10-cost-and-models.md)
+
+Managing API costs, choosing the right model for the task, local vs cloud trade-offs, cost-saving strategies.
 
 ---
 

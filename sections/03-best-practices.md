@@ -189,3 +189,31 @@ The agent's session history + git commit messages + `CHANGELOG.md` gives you a c
 
 - In OpenCode, the `opencode-ignore` plugin can explicitly block file reads.
 - Add `.env.example` (committed) to show what variables are needed without exposing values.
+
+---
+
+## Common mistakes
+
+### Prompting too much at once
+
+Asking the agent to "build the entire auth system" leads to poor results. Break it into smaller tasks.
+
+### Skipping the plan phase
+
+The plan-first pattern exists because it works. Skipping it leads to debugging sessions that take longer than the planning would have.
+
+### Not reviewing the agent's code
+
+You own the result. Read every file the agent creates. If you don't understand it, ask the agent to explain.
+
+### Using the same model for everything
+
+Use cheap models for planning, capable models for implementation. This saves money and often works better.
+
+### Ignoring context overflow
+
+When the agent starts repeating itself or forgetting things, clear the session. Running on full context degrades quality.
+
+### Not committing frequently
+
+Git is your safety net. Commit before anything substantial. If it goes wrong, `git checkout .` resets everything.

@@ -141,9 +141,39 @@ If sessions run long, keep a `docs/SESSION.md` scratch file where the agent logs
 
 Both tools support running local models via Ollama or LM Studio.
 
-**OpenCode:** configure in `~/.config/opencode/opencode.json` (see the starter template in this repo).
+### Why use local models?
 
-**Claude Code:**
+- **Privacy:** Your code never leaves your machine
+- **Cost:** Free after hardware investment (GPU needed)
+- **Offline:** Works without internet
+- **Custom:** Run fine-tuned models for specific domains
+
+### Trade-offs
+
+- Slower than cloud models
+- Less capable for complex reasoning
+- Need a decent GPU (8GB+ VRAM recommended)
+- Context windows smaller on many local models
+
+### OpenCode configuration
+
+Configure in `~/.config/opencode/opencode.json`:
+
+```json
+{
+  "model": "qwen2.5-coder:14b",
+  "provider": {
+    "ollama": {
+      "url": "http://localhost:11434"
+    }
+  },
+  "numCtx": 32768
+}
+```
+
+Set `numCtx` to 32768 or higher — agentic coding with tool calls and long files needs the space.
+
+### Claude Code configuration
 
 ```bash
 export ANTHROPIC_AUTH_TOKEN="ollama"
@@ -151,7 +181,30 @@ export ANTHROPIC_BASE_URL="http://localhost:11434"
 claude --model qwen3-coder:latest
 ```
 
-Local models are slower and less capable than cloud models for complex reasoning, but useful for privacy-sensitive work or offline use. Use larger context windows (`numCtx: 32768` or higher) for vibe coding — tool calls and long files need the space.
+### Recommended local models for vibe coding
+
+| Model | Size | Performance |
+| --- | --- | --- |
+| Qwen2.5-Coder 14B | 14GB | Best all-around |
+| CodeLlama 13B | 13GB | Good, slightly slower |
+| DeepSeek Coder 6.7B | 6.7GB | Lightweight, decent |
+| Qwen2.5-Coder 7B | 7GB | If VRAM is tight |
+
+### When to use local vs cloud
+
+**Use local when:**
+
+- Working on sensitive code
+- Offline or on a plane
+- Doing simple tasks (file editing, searching)
+- Want to experiment without cost
+
+**Use cloud when:**
+
+- Complex architecture decisions
+- Debugging tricky issues
+- Need the best code quality
+- Speed matters
 
 ---
 
