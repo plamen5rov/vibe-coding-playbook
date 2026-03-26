@@ -69,7 +69,7 @@ git commit -m "Describe the actual change"
 ```
 
 - Craft commit messages that are concise but informative: `"Clarify markdownlint setup"` beats `"updates"`.
-- Never push without the user's go-ahead; instead, remind them: `git push origin <branch>`.
+- Never push without the user's go-ahead; explicitly wait for the `/push` command before running `git push origin <branch>`.
 
 ### 3.4 Validation
 
@@ -180,7 +180,7 @@ except json.JSONDecodeError as exc:
 - Be concise and factual; no filler.
 - Surface blockers early and propose a default path forward.
 - If a task seems risky or destructive, pause and ask.
-- Always remind the user to run `git add`, `git commit`, and `git push` after verifying changes.
+- Always remind the user to run `git add`, `git commit`, and `git push` after verifying changes, and wait for the `/push` command before pushing yourself.
 
 ## 7. Anti-Patterns & Guardrails
 

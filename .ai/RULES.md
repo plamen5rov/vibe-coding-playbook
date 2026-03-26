@@ -24,6 +24,7 @@ These rules override default AI behavior.
 
 - Always check docs/TASKS.md before starting
 - Work step-by-step
+- Do not push commits until the user explicitly issues the `/push` command
 
 ## Communication
 
