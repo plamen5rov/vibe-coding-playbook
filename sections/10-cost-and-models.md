@@ -1,7 +1,5 @@
 # Cost and Models
 
-![Header](../pictures/10-cost-and-models.png)
-
 API costs add up fast if you're not paying attention. This section shows you how to manage costs while getting good results.
 
 ---
