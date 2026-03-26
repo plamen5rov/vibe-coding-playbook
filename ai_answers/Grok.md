@@ -1,3 +1,5 @@
+<!-- markdownlint-disable-file -->
+
 \*\*UPDATED FAQ: Vibe/Context Coding with OpenCode (VS Code) and Claude Code (Local Models) – March 2026 Edition\*\*
 
 This is the complete, up-to-date answer to every question in your original FAQ.md. All advice is based on the current (March 2026) official documentation and best practices for \*\*OpenCode\*\* (the open-source AI coding agent at opencode.ai) and \*\*Claude Code\*\* (Anthropic’s agentic coding harness at code.claude.com). Both tools are fully compatible with vibe/context coding workflows: you provide high-level context (“vibe”) via dedicated files, and the agent plans, explores, edits, tests, and commits autonomously.

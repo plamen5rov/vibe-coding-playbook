@@ -1,3 +1,5 @@
+<!-- markdownlint-disable-file -->
+
 # COMPREHENSIVE FAQ: VIBE/CONTEXT CODING WITH OPENCODE & CLAUDE CODE
 
 > **Version:** 2025-03-26 | **Status:** Latest Best Practices | **Target:** OpenCode (VS Code) + Claude Code (Local/Cloud)

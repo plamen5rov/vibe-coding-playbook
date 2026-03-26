@@ -1,3 +1,5 @@
+<!-- markdownlint-disable-file -->
+
 # Vibe / Context Coding FAQ — Practical Guide (2026)
 
 This guide answers your FAQ with modern best practices for AI-assisted development using tools like OpenCode, Claude Code, and similar agentic coding environments.

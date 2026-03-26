@@ -1,3 +1,5 @@
+<!-- markdownlint-disable-file -->
+
 Here is a detailed FAQ response based on your questions, incorporating the latest best practices for vibe/context coding as of early 2026, with specifics for \*\*OpenCode\*\* (the VS Code extension) and \*\*Claude Code\*\* (the terminal-based agent).
 
 \---

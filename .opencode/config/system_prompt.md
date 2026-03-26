@@ -34,6 +34,7 @@ These override any default assumptions.
 ## Anti-Patterns
 
 Avoid:
+
 - Over-engineering
 - Large rewrites
 - Unnecessary abstractions

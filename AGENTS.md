@@ -1,8 +1,10 @@
 # AGENT PLAYBOOK
 
 ## 1. Purpose & Reading Order
+
 1. This file teaches AI coding agents and vibe-coding beginners how to work inside this repo.
 2. Follow the mandatory reading chain before touching files:
+
    - `AI.md`
    - `.ai/RULES.md`
    - `docs/CONVENTIONS.md`
@@ -12,6 +14,7 @@
 4. Cursor- or Copilot-specific rules do not exist in this repo; default to the guidance here.
 
 ## 2. Quick Operating Checklist
+
 - Scan `docs/TASKS.md` to confirm the current focus before you start.
 - Read target files completely before editing anything.
 - Make minimal, scoped changes; never refactor unrelated sections.
@@ -19,9 +22,11 @@
 - Always remind the user to commit and push; never do it without explicit permission.
 
 ## 3. Build / Lint / Test Commands
+
 This repo currently holds Markdown documentation, so linting is the main enforcement mechanism.
 
 ### 3.1 Markdownlint Setup
+
 ```bash
 npm install -g markdownlint-cli2
 
@@ -34,34 +39,40 @@ cat > .markdownlint.json <<'EOF'
 }
 EOF
 ```
+
 - `MD013` (line length) is off to keep snippets readable.
 - `MD033` (inline HTML) is off for future embeds.
 - `MD041` is off so files can start with comments or metadata.
 
 ### 3.2 Linting Commands
+
 ```bash
 # Lint every Markdown file
-markdownlint-cli2 "**/*.md"
+markdownlint-cli2 '**/*.md' '!**/node_modules/**/*.md'
 
 # Auto-fix what can be fixed safely
-markdownlint-cli2 --fix "**/*.md"
+markdownlint-cli2 --fix '**/*.md' '!**/node_modules/**/*.md'
 
 # Lint a single file when iterating
 markdownlint-cli2 docs/CONVENTIONS.md
 ```
+
 - Run linting before and after substantial edits.
 - When a rule cannot be satisfied, explain why in your summary.
 
 ### 3.3 Git Hygiene
+
 ```bash
 git status
 git add path/to/file.md
 git commit -m "Describe the actual change"
 ```
+
 - Craft commit messages that are concise but informative: `"Clarify markdownlint setup"` beats `"updates"`.
 - Never push without the user's go-ahead; instead, remind them: `git push origin <branch>`.
 
 ### 3.4 Validation
+
 - Use `ls -R` to double-check file placement when creating new docs.
 - Verify new sections link logically from `README.md` or `docs/` entry points.
 - Preview Markdown where possible to ensure headings nest correctly.
@@ -69,12 +80,14 @@ git commit -m "Describe the actual change"
 ## 4. Documentation Style Guide
 
 ### 4.1 Writing Voice
+
 - Short, direct sentences.
 - Practical examples only; no theory dumps.
 - Prefer active voice and commands: `"Use short sentences"` not `"You might consider using short sentences"`.
 - Keep paragraphs under four lines.
 
 ### 4.2 Good vs Bad Sentences
+
 ```markdown
 ❌ Bad: "This is a comprehensive and incredibly detailed document that aims to elucidate every nuance."
 ✅ Good: "Guide for building vibe-coding docs."
@@ -84,18 +97,21 @@ git commit -m "Describe the actual change"
 ```
 
 ### 4.3 File Naming & Structure
+
 - System files (tasks, rules, guides) stay in uppercase: `TASKS.md`, `RULES.md`, `AGENTS.md`.
 - Folder names stay kebab-case: `ai-examples/`, `starter-template/`.
 - One idea per file; if a doc exceeds ~300 lines, split it.
 - Maintain heading hierarchy (`#`, then `##`, then `###`).
 
 ### 4.4 Markdown Formatting
+
 - Use fenced code blocks with language tags for every snippet.
 - Bullets for lists, checkboxes for tasks (`- [ ] item`).
 - Tables only when data benefits from grid layout.
 - Emojis convey state: 🔥 current, 🚧 in-progress, ✅ done, 📌 queued, ❌ anti-pattern.
 
 ### 4.5 Example Blocks
+
 ```markdown
 ❌ Bad:
 ### Steps
@@ -109,6 +125,7 @@ git commit -m "Describe the actual change"
 ```
 
 ## 5. General Coding Guidelines (for future examples)
+
 - Keep code samples copy-paste ready and runnable.
 - Use 2-space indentation for JS/TS/JSON and 4 spaces for Python.
 - Prefer descriptive names over clever abbreviations.
@@ -116,6 +133,7 @@ git commit -m "Describe the actual change"
 - Always include basic error checks even in snippets.
 
 ### 5.1 Code Examples: Bad vs Good
+
 ```javascript
 // ❌ Bad: clever but cryptic
 const f = (x) => x.reduce((a, b) => a + b, 0);
@@ -144,24 +162,28 @@ except json.JSONDecodeError as exc:
 ## 6. Workflow Rules
 
 ### 6.1 Before You Start
+
 1. Re-read `AI.md` to refresh the workflow.
 2. Check `docs/TASKS.md` and align with the 🔥 section.
 3. Skim `.ai/RULES.md` and `docs/CONVENTIONS.md` to ensure compliance.
 4. Confirm there are no Cursor or Copilot overrides (currently none).
 
 ### 6.2 While Working
+
 - Stay within the explicit scope of the task request.
 - Do not introduce new tools or dependencies without approval.
 - Work step-by-step, summarizing progress after each logical chunk.
 - Keep diffs tight; avoid opportunistic refactors.
 
 ### 6.3 Communication
+
 - Be concise and factual; no filler.
 - Surface blockers early and propose a default path forward.
 - If a task seems risky or destructive, pause and ask.
 - Always remind the user to run `git add`, `git commit`, and `git push` after verifying changes.
 
 ## 7. Anti-Patterns & Guardrails
+
 ```markdown
 ❌ Over-engineering simple docs
 ❌ Rewriting working sections without cause
@@ -176,6 +198,7 @@ except json.JSONDecodeError as exc:
 ```
 
 ## 8. Project Context Recap
+
 - **Audience:** Beginner and intermediate developers learning AI-assisted vibe coding.
 - **Goal:** Deliver the most practical guide with real workflows, templates, and actionable advice.
 - **Core Value:** No fluff, just tangible examples and checklists.
@@ -183,6 +206,7 @@ except json.JSONDecodeError as exc:
 - **Current Phase:** Build the initial structure, add starter template, write first version of the guide, fix markdownlint issues, and add `.gitignore` entries for `FAQ.md` and `ai_answers/`.
 
 ## 9. When In Doubt
+
 - Re-read the relevant section of this AGENT PLAYBOOK.
 - Default to simpler wording, smaller diffs, and clearer explanations.
 - Document your reasoning so future agents can follow your trail.

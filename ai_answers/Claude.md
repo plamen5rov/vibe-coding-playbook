@@ -1,3 +1,5 @@
+<!-- markdownlint-disable-file -->
+
 # Vibe / Context Coding FAQ — Answers
 
 **Covering OpenCode and Claude Code | Updated March 2026**

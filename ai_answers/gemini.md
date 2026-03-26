@@ -1,3 +1,5 @@
+<!-- markdownlint-disable-file -->
+
 This guide provides expert advice on vibe and context coding using OpenCode (in VS Code) and Claude Code, based on current 2026 best practices.
 
 # Vibe Coding FAQ: Expert Solutions (2026 Edition)

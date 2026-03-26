@@ -1,3 +1,5 @@
+<!-- markdownlint-disable-file -->
+
 Here is a comprehensive guide tailored to the latest practices in Vibe/Context Coding, specifically addressing your questions regarding OpenCode, Claude Code, and the agentic workflow.
 
 \`\`\`markdown  

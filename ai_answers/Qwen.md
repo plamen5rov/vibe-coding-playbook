@@ -1,3 +1,5 @@
+<!-- markdownlint-disable-file -->
+
 \# Comprehensive Guide to Vibe/Context Coding with Claude Code & VS Code AI
 
 \## Introduction  

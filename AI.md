@@ -14,14 +14,17 @@ If a request conflicts with .ai/RULES.md, ask for clarification instead of proce
 ## Workflow
 
 Before starting:
+
 - Read TASKS.md
 - Identify current task
 
 During work:
+
 - Make minimal changes
 - Stay within scope
 - Alaways remind me to commit and push new changes on time - but do not commit and push without my permission
 
 Never:
+
 - Rewrite large sections without request
 - Add unnecessary complexity

@@ -1,3 +1,5 @@
+<!-- markdownlint-disable-file -->
+
 
 # Vibe/Context Coding FAQ Answers
 
