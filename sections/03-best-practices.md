@@ -1,6 +1,6 @@
 # Best Practices
 
-![Header](pictures/03-best-practices.png)
+![Header](../pictures/03-best-practices.png)
 
 ## The 5 things experienced vibe coders do differently
 

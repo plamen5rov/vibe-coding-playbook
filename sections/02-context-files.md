@@ -1,6 +1,6 @@
 # Context Files: Briefing the AI Before You Start
 
-![Header](pictures/02-context-files.png)
+![Header](../pictures/02-context-files.png)
 
 The single highest-leverage thing you can do in vibe coding is create context files before the first session. An agent that knows your project's goals, tech stack, and constraints makes far fewer wrong assumptions.
 

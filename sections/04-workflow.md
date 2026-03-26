@@ -1,6 +1,6 @@
 # Workflow: Running a Vibe Coding Session
 
-![Header](pictures/04-workflow.png)
+![Header](../pictures/04-workflow.png)
 
 ## Starting a new project
 

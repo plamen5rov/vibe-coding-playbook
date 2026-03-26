@@ -1,6 +1,6 @@
 # Resources
 
-![Header](pictures/06-resources.png)
+![Header](../pictures/06-resources.png)
 
 Curated links for vibe coding with OpenCode and Claude Code. URLs verified as of March 2026.
 

@@ -1,6 +1,6 @@
 # Git & GitHub for Vibe Coding
 
-![Header](pictures/01-git-github.png)
+![Header](../pictures/01-git-github.png)
 
 ## Create the repo yourself — always
 
