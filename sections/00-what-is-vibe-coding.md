@@ -103,39 +103,10 @@ Read in order. Each section builds on the previous.
 
 ## Your first vibe coding session
 
-Here's what a complete beginner session looks like:
+The full walkthrough — including the exact commands — is in the [README quick start](../README.md#quick-start-your-first-session-).
 
-```bash
-# 1. Create the repo
-gh repo create my-first-project --private
-git clone https://github.com/yourname/my-first-project.git
-cd my-first-project
+In short: create the repo, add context files, start a branch, run the agent, review the output, commit. That's it. The rest of this playbook makes you faster, safer, and more effective.
 
-# 2. Create context files
-# - AGENTS.md
-# - docs/PROJECT.md
-# - docs/TASKS.md
-# - .gitignore
+---
 
-# 3. Start a branch
-git checkout -b feature/hello-world
-
-# 4. Run the agent
-opencode  # or: claude
-
-# 5. Tell it:
-# "Create a simple Python script that prints 'Hello, world!'
-# Save it to hello.py and verify it runs."
-
-# 6. Review what it writes
-# - Does it work?
-# - Is the code readable?
-# - Did it do what you asked?
-
-# 7. Commit
-git add . && git commit -m "feat: hello world script"
-
-# 8. Done — merge to main when ready
-```
-
-That's it. You've vibe coded. The rest of this playbook makes you faster, safer, and more effective.
+← _Start here_ | [Next: Git & GitHub →](01-git-github.md)

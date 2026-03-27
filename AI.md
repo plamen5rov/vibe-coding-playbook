@@ -23,6 +23,7 @@ During work:
 - Make minimal changes
 - Stay within scope
 - When I send `/push`, stage all changes, commit with a descriptive message, and push — no further permission needed.
+- Run markdownlint before and after substantial Markdown edits without asking — use `markdownlint-cli2 '**/*.md' '!**/node_modules/**/*.md'`.
 
 Never:
 

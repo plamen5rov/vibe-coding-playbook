@@ -32,7 +32,7 @@ Every line should pass this test: *"Would removing this line cause the agent to 
 
 **The WHY / WHAT / HOW pattern:**
 
-```markdown
+```text
 # Project Name
 One-line description. One-line tech stack.
 
@@ -41,9 +41,9 @@ What problem does this solve? Who is it for?
 
 ## Architecture
 Key directories and their purpose:
-- `src/api/` — REST handlers
-- `src/models/` — data models
-- `src/services/` — business logic
+- src/api/   — REST handlers
+- src/models/ — data models
+- src/services/ — business logic
 
 ## Tech Stack
 - Runtime: Node 22
@@ -52,28 +52,24 @@ Key directories and their purpose:
 - Tests: Vitest
 
 ## Commands
-```bash
-pnpm dev       # start dev server
-pnpm test      # run tests
-pnpm lint      # eslint
-```
+  pnpm dev       # start dev server
+  pnpm test      # run tests
+  pnpm lint      # eslint
 
 ## Coding Conventions
-
-- TypeScript strict mode — no `any`
+- TypeScript strict mode — no any
 - Functional components only (React)
 - Conventional commit messages
 
 ## Rules for This Agent
-
 - Read docs/TASKS.md before starting
 - Never modify the DB schema without a migration
 - Ask before adding new dependencies
 - Never commit .env or secrets
-
-```text
+```
 
 **What to exclude from `AGENTS.md`:**
+
 - Exhaustive documentation of every file
 - Instructions that only apply to one rare task
 - Coding style rules already enforced by a linter
@@ -160,3 +156,7 @@ The auto-generated file is a starting point — review and refine it before rely
 | `.claude/commands/*.md` | `.claude/commands/` | Same for Claude Code |
 
 **Always commit** `AGENTS.md`, `CLAUDE.md`, and all `docs/` files — they are your project's intelligence and should travel with the repo.
+
+---
+
+← [Previous: Git & GitHub](01-git-github.md) | [Next: Best Practices →](03-best-practices.md)

@@ -16,7 +16,7 @@ Most models use token-based pricing:
 | Output tokens | Model responses | $3-75 per million |
 | Context tokens | Files the model reads | Often free up to limit |
 
-Prices vary by model. Claude 3.5 Sonnet is roughly $3/million input, $15/million output. GPT-4o is around $5/million input, $15/million output.
+Prices vary by model and change frequently — always verify at the provider's pricing page before budgeting. As a rough guide: mid-tier models (Claude Sonnet, GPT-4o) run $3–5/million input and $10–15/million output; premium models (Claude Opus, GPT-4) are 3–5× more expensive.
 
 ### Local models (Ollama, LM Studio)
 
@@ -35,11 +35,11 @@ A typical session:
 - **Context tokens:** ~50K (reading files, existing code)
 - **Output tokens:** ~10K (code + explanations)
 
-**Approximate cost for a 30-minute session:**
+**Approximate cost for a 30-minute session** (estimates — verify current prices at provider dashboards):
 
-- Claude 3.5 Sonnet: $0.30-0.50
-- GPT-4o: $0.40-0.70
-- Claude 4 Opus: $1.00-2.00
+- Claude Sonnet (mid-tier): $0.30–0.50
+- GPT-4o (mid-tier): $0.40–0.70
+- Claude Opus / GPT-4 (premium): $1.00–2.00+
 
 **Monthly estimate (10 sessions/week):**
 
@@ -119,7 +119,7 @@ Set `numCtx: 32768` or higher — agentic coding needs large context.
 Claude Code uses your API key or subscription:
 
 - **API key:** Pay per use
-- **Subscription:** Use existing ChatGPT Plus, GitHub Copilot, or GitLab Duo — zero additional cost
+- **Subscription:** Use existing GitHub Copilot or GitLab Duo — zero additional cost
 
 ### Local models via Ollama
 
@@ -145,7 +145,7 @@ Don't paste file contents. Use `@filename` references:
 
 ### 2. Clear context between tasks
 
-Context you don't need costs money. Clear sessions when switching topics ([section 04](../04-workflow.md)).
+Context you don't need costs money. Clear sessions when switching topics ([section 04](04-workflow.md)).
 
 ### 3. Use the right model for the task
 
@@ -173,7 +173,7 @@ Use local models (Ollama) with Qwen2.5-Coder or CodeLlama. Quality is decent for
 
 ### For maximum capability
 
-Claude 4 Opus or GPT-4. Use for complex architecture, debugging, or when the task is high-value.
+Claude Opus or GPT-4 (current premium tiers). Use for complex architecture, debugging, or when the task is high-value.
 
 ### For speed
 
@@ -206,3 +206,7 @@ Signs you can downgrade:
 | Premium | Opus, GPT-4 | Complex architecture, debugging |
 
 **Rule of thumb:** Start with mid-tier. Upgrade when you hit limitations. Downgrade when the task is simple.
+
+---
+
+← [Previous: Project Types](09-project-types.md)

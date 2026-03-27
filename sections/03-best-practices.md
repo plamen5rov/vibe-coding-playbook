@@ -187,7 +187,16 @@ The agent's session history + git commit messages + `CHANGELOG.md` gives you a c
 }
 ```
 
-- In OpenCode, the `opencode-ignore` plugin can explicitly block file reads.
+- In OpenCode, the `opencode-ignore` plugin can explicitly block file reads. Install it by adding it to your `opencode.json` plugins list:
+
+```json
+{
+  "plugins": ["opencode-ignore"]
+}
+```
+
+Then create a `.opencodeignore` file (same syntax as `.gitignore`) listing the files the agent should never read.
+
 - Add `.env.example` (committed) to show what variables are needed without exposing values.
 
 ---
@@ -217,3 +226,7 @@ When the agent starts repeating itself or forgetting things, clear the session. 
 ### Not committing frequently
 
 Git is your safety net. Commit before anything substantial. If it goes wrong, `git checkout .` resets everything.
+
+---
+
+← [Previous: Context Files](02-context-files.md) | [Next: Workflow →](04-workflow.md)

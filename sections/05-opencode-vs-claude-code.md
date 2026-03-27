@@ -22,7 +22,7 @@ Both tools are agentic coding assistants that read context files, run shell comm
 | **Plan mode** | Built-in `plan` agent (read-only) | Shift+Tab twice |
 | **Undo / rollback** | Git + session history | `/rewind`, checkpoints + git |
 | **Parallel sessions** | Multiple terminal instances | `--worktree` flag, git worktrees |
-| **IDE integration** | VS Code extension | Terminal-only |
+| **IDE integration** | VS Code extension | VS Code extension + Terminal |
 | **Cost** | Free (BYOM — bring your own model key) | Pay-per-use or Claude subscription |
 
 ---
@@ -74,7 +74,7 @@ Claude Code is Anthropic's official CLI agent, optimized for Claude models. It h
 
 - Complex architecture decisions and long reasoning chains
 - Projects where you want the most capable model available
-- Teams using GitHub Copilot, ChatGPT Plus, or GitLab Duo (zero-setup subscription use)
+- Teams using GitHub Copilot or GitLab Duo (zero-setup subscription use)
 - Workflows that benefit from Claude's built-in skills and hooks system
 
 **Setup:**
@@ -91,7 +91,7 @@ claude
 - **Checkpoints:** `/rewind` restores a previous state. Works within a session — complements git for in-session undo.
 - **Skills:** folder-based bundles of prompts + scripts in `.claude/skills/*/SKILL.md`. Powerful for repeatable domain-specific tasks (e.g., PDF processing, database migrations).
 - **Hooks:** automate actions on events — run lint after every file edit, play a sound when the agent finishes.
-- **Subscription models:** use existing ChatGPT Plus, GitHub Copilot, or GitLab Duo subscriptions with zero additional cost.
+- **Subscription models:** use existing GitHub Copilot or GitLab Duo subscriptions with zero additional cost.
 
 **Tips:**
 
@@ -112,3 +112,7 @@ Use whichever tool fits the task:
 - Claude Code for complex reasoning, long planning sessions, or when you want Plan mode.
 
 The key is keeping `AGENTS.md` accurate — both tools depend on it equally.
+
+---
+
+← [Previous: Workflow](04-workflow.md) | [Next: Resources →](06-resources.md)

@@ -216,6 +216,7 @@ New project:
 □ Write docs/PROJECT.md
 □ Run /init → refine AGENTS.md
 □ Add .gitignore + .env.example
+□ Create CHANGELOG.md stub
 □ Create core slash commands
 
 Per session:
@@ -225,6 +226,7 @@ Per session:
 □ Run lint + tests after changes
 □ Commit frequently — git is your undo button
 □ /clear between unrelated tasks
+□ Update docs/SESSION.md before ending long sessions
 □ Update CHANGELOG.md after features
 
 Before merging:
@@ -232,3 +234,7 @@ Before merging:
 □ Run the full test suite
 □ Merge to main, push
 ```
+
+---
+
+← [Previous: Best Practices](03-best-practices.md) | [Next: OpenCode vs Claude Code →](05-opencode-vs-claude-code.md)

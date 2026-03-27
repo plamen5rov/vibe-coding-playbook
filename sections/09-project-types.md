@@ -237,7 +237,7 @@ Don't let the agent choose for you. The agent suggests whatever is popular in it
 2. Ask the agent: "Given these constraints, suggest a stack and explain tradeoffs"
 3. Discuss, decide, then document in `AGENTS.md`
 
-This is covered in detail in [section 02](../02-context-files.md).
+This is covered in detail in [section 02](02-context-files.md).
 
 ---
 
@@ -250,3 +250,7 @@ This is covered in detail in [section 02](../02-context-files.md).
 | CLI tool | GitHub, npm/pip |
 | Script | (usually none needed) |
 | Library | GitHub, package registry |
+
+---
+
+← [Previous: Debugging with Agents](08-debugging-with-agents.md) | [Next: Cost and Models →](10-cost-and-models.md)

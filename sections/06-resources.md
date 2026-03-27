@@ -62,12 +62,12 @@ The vibe coding tooling changes fast. These are the most reliable signals:
 
 ## Community templates and examples
 
-| Resource | URL |
-| --- | --- |
-| Claude Code settings examples (feiskyer) | <https://github.com/feiskyer/claude-code-settings> |
-| Claude Code best practices (shanraisshan) | <https://github.com/shanraisshan/claude-code-best-practice> |
-| Claude Code workflows (shinpr) | <https://github.com/shinpr/claude-code-workflows> |
-| Cursor rules hub (also useful for AGENTS.md patterns) | <https://cursor.directory/> |
+| Resource | URL | Notes |
+| --- | --- | --- |
+| Claude Code settings examples (feiskyer) | <https://github.com/feiskyer/claude-code-settings> | Real-world `.claude/settings.json` examples |
+| Claude Code best practices (shanraisshan) | <https://github.com/shanraisshan/claude-code-best-practice> | Curated tips and workflow patterns |
+| Claude Code workflows (shinpr) | <https://github.com/shinpr/claude-code-workflows> | Opinionated workflow scripts and helpers |
+| Cursor rules hub (also useful for AGENTS.md patterns) | <https://cursor.directory/> | Large library of reusable rules — adapt for `AGENTS.md` |
 
 ---
 
@@ -80,3 +80,7 @@ Vibe coding evolved from "describe what you want" to "context engineering" — t
 | Andrej Karpathy's original "vibe coding" post (Feb 2025) | Search "Karpathy vibe coding" on X |
 | Simon Willison's blog (simonwillison.net) | Practical LLM engineering patterns |
 | Anthropic's prompt engineering guide | <https://docs.anthropic.com/en/docs/prompt-engineering> |
+
+---
+
+← [Previous: OpenCode vs Claude Code](05-opencode-vs-claude-code.md) | [Next: Prompt Engineering →](07-prompt-engineering.md)

@@ -4,7 +4,7 @@
 
 ## Create the repo yourself — always
 
-All 10 AI models surveyed agree on this: **create the GitHub repo first, then clone locally.**
+All 10 AI models surveyed agree on this: **create the GitHub repo first, then clone locally.** (See [how this playbook was made](../README.md#how-this-playbook-was-made) for context on the survey.)
 
 ```bash
 # Option A: GitHub CLI (recommended)
@@ -136,3 +136,7 @@ CLAUDE.local.md
 ```
 
 Do **not** ignore `.opencode/` or `.claude/` wholesale — the commands, agents, and settings inside them are project context that should travel with the repo.
+
+---
+
+← [Previous: What is Vibe Coding?](00-what-is-vibe-coding.md) | [Next: Context Files →](02-context-files.md)

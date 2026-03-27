@@ -74,7 +74,7 @@ The agent builds a complex solution for a simple problem.
 
 The agent mixes requirements from a previous task with the current one.
 
-**Fix:** Clear the session between unrelated tasks ([section 04](../04-workflow.md)), or explicitly reset:
+**Fix:** Clear the session between unrelated tasks ([section 04](04-workflow.md)), or explicitly reset:
 
 ```text
 "Forget the previous task. We're now working on [new task]. Here's what I need:"
@@ -176,8 +176,12 @@ The nuclear option:
 
 The best debugging is not needing to debug. These habits prevent issues:
 
-- **Plan-first** ([section 04](../04-workflow.md)) — catch misunderstandings before code is written
+- **Plan-first** ([section 04](04-workflow.md)) — catch misunderstandings before code is written
 - **Small steps** — don't let the agent run for 20 minutes unattended
 - **Run tests after every change** — tell the agent to do this automatically
 - **Review every file** — don't accept code you haven't read
 - **Keep AGENTS.md accurate** — outdated context causes wrong assumptions
+
+---
+
+← [Previous: Prompt Engineering](07-prompt-engineering.md) | [Next: Project Types →](09-project-types.md)

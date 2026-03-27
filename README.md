@@ -8,6 +8,18 @@ No theory. No fluff. Just workflows, templates, and checklists you can use today
 
 ---
 
+## How this playbook was made
+
+This guide started as an experiment. The author had real, practical questions about vibe coding — the kind a solo developer faces before starting their first AI-assisted project.
+
+Those questions became [`FAQ.md`](FAQ.md). They were then submitted, unchanged, to the **top 10 AI LLMs**: ChatGPT, Claude, DeepSeek, Gemini, Grok, Kimi, Mistral, Perplexity, Qwen, and Le Chat. Every raw answer is preserved in [`ai_answers/`](ai_answers/).
+
+The answers were then read side by side, consensus patterns extracted, and contradictions resolved. This playbook is that synthesis — not one person's opinion, not one model's advice, but the distilled agreement across 10 different AI systems.
+
+When a section says "all 10 AI models surveyed agree", that is literally what happened.
+
+---
+
 ## Quick start (your first session) 🚀
 
 ```bash
@@ -92,6 +104,7 @@ The [`starter-template/`](starter-template/) directory is a generic project scaf
 ```text
 starter-template/
 ├── AGENTS.md        ← main AI context file (fill in your project details)
+├── CHANGELOG.md     ← change log stub (Keep a Changelog format)
 ├── .gitignore       ← sensible defaults for AI tools + common stacks
 ├── README.md        ← human-readable project overview
 └── docs/
@@ -115,48 +128,7 @@ cp -r starter-template/. /path/to/your/new-project/
 
 Contributions are welcome. This guide should stay current as the tools evolve — sections need updating, new tools emerge, and real-world experience improves the advice.
 
-### Ways to contribute
-
-- **Fix something wrong** — outdated URL, incorrect advice, broken command.
-- **Improve a section** — better examples, clearer explanation, missing edge case.
-- **Add a new section** — a topic not covered yet (e.g., Claude Code hooks, specific MCP setups, common mistakes).
-- **Share your workflow** — if you have a battle-tested pattern, open an issue or PR.
-
-### Via pull request
-
-```bash
-# 1. Fork the repo on GitHub
-# 2. Clone your fork
-git clone https://github.com/YOUR_USERNAME/vibe-coding-playbook.git
-cd vibe-coding-playbook
-
-# 3. Create a branch
-git checkout -b improve/section-name
-
-# 4. Make your changes
-# Sections live in sections/
-# Starter template lives in starter-template/
-# Run markdownlint before submitting:
-markdownlint-cli2 '**/*.md' '!**/node_modules/**/*.md'
-
-# 5. Commit and push
-git add . && git commit -m "Improve git workflow section with worktree example"
-git push -u origin improve/section-name
-
-# 6. Open a PR on GitHub
-gh pr create --base main
-```
-
-### Via issue
-
-If you spot something wrong or have a suggestion but don't want to write the fix yourself, [open an issue](https://github.com/YOUR_USERNAME/vibe-coding-playbook/issues). Describe what's wrong or what's missing.
-
-### Guidelines
-
-- Keep the style consistent: short sentences, practical examples, no fluff. See [`docs/CONVENTIONS.md`](docs/CONVENTIONS.md).
-- One idea per PR. Small, focused changes are easier to review.
-- Include a bad/good example when introducing a new practice.
-- Run markdownlint before submitting — zero errors expected.
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) for full guidelines, ways to help, and the PR workflow.
 
 ---
 
@@ -166,10 +138,13 @@ If you spot something wrong or have a suggestion but don't want to write the fix
 vibe-coding-playbook/
 ├── sections/           ← guide chapters (the published content)
 ├── starter-template/   ← copyable project scaffold
+├── ai_answers/         ← raw answers from 10 LLMs (the source material)
+├── FAQ.md              ← the original questions submitted to each LLM
 ├── docs/               ← AI instruction files (not guide content)
 ├── .ai/                ← AI agent behavior rules
 ├── .opencode/          ← OpenCode config and commands
 ├── AGENTS.md           ← agent playbook for working in this repo
+├── CHANGELOG.md        ← change history for this playbook
 └── README.md           ← this file
 ```
 

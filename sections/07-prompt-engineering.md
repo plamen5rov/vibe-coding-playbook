@@ -207,3 +207,7 @@ Give it permission to make reasonable assumptions:
 - **Tell the agent what you liked.** "That approach worked well — use the same pattern for the next feature."
 - **Be specific about file paths.** "Edit src/api/users.py, not just 'the user file'."
 - **State constraints explicitly.** "Use only the dependencies already in package.json" is clearer than "keep it simple."
+
+---
+
+← [Previous: Resources](06-resources.md) | [Next: Debugging with Agents →](08-debugging-with-agents.md)
