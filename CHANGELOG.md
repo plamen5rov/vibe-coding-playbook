@@ -2,7 +2,7 @@
 
 All notable changes to the Vibe Coding Playbook are documented here.
 
-Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/){target="_blank" rel="noopener"}.
 
 ---
 

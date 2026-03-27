@@ -42,7 +42,7 @@ gh pr create --base main
 
 ## Via issue
 
-If you spot something wrong or have a suggestion but don't want to write the fix yourself, [open an issue](https://github.com/plamen5rov/vibe-coding-playbook/issues). Describe what's wrong or what's missing.
+If you spot something wrong or have a suggestion but don't want to write the fix yourself, [open an issue](https://github.com/plamen5rov/vibe-coding-playbook/issues){target="_blank" rel="noopener"}. Describe what's wrong or what's missing.
 
 ---
 

@@ -1,5 +1,7 @@
 # What is Vibe Coding?
 
+![Header](../pictures/00-what-is-vibe-coding.png)
+
 This chapter gives you the mental model you need before touching any tools. Vibe coding is simple once you understand how to think about it.
 
 ---

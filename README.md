@@ -12,7 +12,7 @@ No theory. No fluff. Just workflows, templates, and checklists you can use today
 
 This guide started as an experiment. The author had real, practical questions about vibe coding — the kind a solo developer faces before starting their first AI-assisted project.
 
-Those questions became [`FAQ.md`](FAQ.md). They were then submitted, unchanged, to the **top 10 AI LLMs**: ChatGPT, Claude, DeepSeek, Gemini, Grok, Kimi, Mistral, Perplexity, Qwen, and Le Chat. Every raw answer is preserved in [`ai_answers/`](ai_answers/).
+Those questions became [`FAQ.md`](FAQ.md). They were then submitted, unchanged, to the **top 10 AI LLMs**: ChatGPT, Claude, DeepSeek, Gemini, Grok, Kimi, Mistral, Perplexity, Qwen, and another Mistral model (to ensure diversity). Every raw answer is preserved in [`ai_answers/`](ai_answers/).
 
 The answers were then read side by side, consensus patterns extracted, and contradictions resolved. This playbook is that synthesis — not one person's opinion, not one model's advice, but the distilled agreement across 10 different AI systems.
 
@@ -128,7 +128,7 @@ cp -r starter-template/. /path/to/your/new-project/
 
 Contributions are welcome. This guide should stay current as the tools evolve — sections need updating, new tools emerge, and real-world experience improves the advice.
 
-See [`CONTRIBUTING.md`](CONTRIBUTING.md) for full guidelines, ways to help, and the PR workflow.
+See [`CONTRIBUTING.md`](CONTRIBUTING.md){target="_blank" rel="noopener"} for full guidelines, ways to help, and the PR workflow.
 
 ---
 

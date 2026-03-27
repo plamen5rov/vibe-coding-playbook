@@ -380,11 +380,71 @@ def generate_resources_header():
     img.save(f"{OUTPUT_DIR}/06-resources.png")
 
 
+def generate_whatis_header():
+    """Header for What is Vibe Coding section."""
+    img = Image.new("RGB", (WIDTH, HEIGHT), COLORS["bg"])
+    draw = ImageDraw.Draw(img)
+
+    create_gradient_bg(draw, WIDTH, HEIGHT)
+    draw_decorative_circles(draw, WIDTH, HEIGHT)
+
+    font_title = load_font(56)
+    font_subtitle = load_font(28)
+
+    title = "What is Vibe Coding?"
+    subtitle = "The mental model"
+
+    bbox = draw.textbbox((0, 0), title, font=font_title)
+    w = bbox[2] - bbox[0]
+
+    draw.text(
+        ((WIDTH - w) // 2, HEIGHT // 2 - 30),
+        title,
+        font=font_title,
+        fill=COLORS["text"],
+    )
+    draw.text(
+        ((WIDTH - w) // 2, HEIGHT // 2 + 40),
+        subtitle,
+        font=font_subtitle,
+        fill=COLORS["accent2"],
+    )
+
+    # Draw brain/architecture icon
+    center_x, center_y = 150, HEIGHT // 2
+    # Brain outline
+    draw.ellipse(
+        [center_x - 40, center_y - 30, center_x + 40, center_y + 30],
+        outline=COLORS["accent1"],
+        width=3,
+    )
+    # Left lobe
+    draw.ellipse(
+        [center_x - 30, center_y - 20, center_x - 10, center_y + 10],
+        fill=COLORS["accent1"],
+    )
+    # Right lobe
+    draw.ellipse(
+        [center_x + 10, center_y - 20, center_x + 30, center_y + 10],
+        fill=COLORS["accent1"],
+    )
+    # Brain stem
+    draw.rectangle(
+        [center_x - 5, center_y + 30, center_x + 5, center_y + 50],
+        fill=COLORS["accent1"],
+    )
+
+    img.save(f"{OUTPUT_DIR}/00-what-is-vibe-coding.png")
+
+
 if __name__ == "__main__":
     print("Generating header images...")
 
     generate_readme_header()
     print("✓ README.png")
+
+    generate_whatis_header()
+    print("✓ 00-what-is-vibe-coding.png")
 
     generate_git_header()
     print("✓ 01-git-github.png")

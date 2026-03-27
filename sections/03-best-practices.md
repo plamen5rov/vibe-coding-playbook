@@ -144,7 +144,7 @@ claude mcp add github
 
 ## Logging changes — CHANGELOG.md
 
-`CHANGELOG.md` is the standard. Use the [Keep a Changelog](https://keepachangelog.com) format and instruct the agent to maintain it.
+`CHANGELOG.md` is the standard. Use the [Keep a Changelog](https://keepachangelog.com){target="_blank" rel="noopener"}{target="_blank" rel="noopener"} format and instruct the agent to maintain it.
 
 Add to `AGENTS.md`:
 
