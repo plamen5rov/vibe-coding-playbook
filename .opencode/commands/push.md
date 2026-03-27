@@ -2,7 +2,7 @@
 description: Stage, commit, and push pending changes
 ---
 
-Stage all pending changes, create a commit with a descriptive message, and push to the remote repository.
+Stage all pending changes, create a commit with a descriptive message, and push to the remote repository. Execute immediately — no confirmation prompts, no asking for permission.
 
 ## Steps
 

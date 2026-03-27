@@ -19,8 +19,9 @@
 - Read target files completely before editing anything.
 - Make minimal, scoped changes; never refactor unrelated sections.
 - Keep a log of commands you run so users can reproduce your steps.
-- When the user sends `/push`, stage all changes, commit with a descriptive message, and push — no further permission needed.
 - Run markdownlint before and after any substantial Markdown edits — no permission needed. Command: `markdownlint-cli2 '**/*.md' '!**/node_modules/**/*.md'`
+- Proactively remind the user when a commit/push is appropriate (e.g., after a significant batch of changes). Do not commit without being asked.
+- When the user sends `/push`, stage all changes, commit with a descriptive message, and push immediately — no further permission needed, no confirmation prompts.
 
 ## 3. Build / Lint / Test Commands
 
