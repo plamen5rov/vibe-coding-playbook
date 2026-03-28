@@ -1,0 +1,20 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "permission": {
+    "read": "allow",
+    "grep": "allow",
+    "edit": "ask",
+    "write": "ask",
+    "bash": "ask",
+    "webfetch": "ask",
+    "websearch": "allow",
+    "glob": "allow",
+    "list": "allow",
+    "lsp": "allow",
+    "skill": "allow",
+    "todowrite": "allow",
+    "question": "allow",
+    "process": "ask"
+  },
+  "instructions": ["AGENTS.md", "AI.md", "CHANGELOG.md",  "docs/*.md"]
+}
