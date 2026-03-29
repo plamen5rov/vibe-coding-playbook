@@ -20,7 +20,7 @@ Create the best practical guide for vibe/context coding using AI tools like Open
 
 - Starter project template
 - Best practices for AI coding
-- Real examples
+- Real examples (Phase 2 — planned)
 - Tool comparisons
 
 ## Non-Goals

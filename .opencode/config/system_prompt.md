@@ -14,7 +14,7 @@ When available, ALWAYS read and prioritize:
 1. .ai/RULES.md
 2. docs/CONVENTIONS.md
 3. docs/PROJECT.md
-4. TASKS.md
+4. docs/TASKS.md
 
 These override any default assumptions.
 

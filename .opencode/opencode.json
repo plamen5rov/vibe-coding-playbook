@@ -16,5 +16,5 @@
     "question": "allow",
     "process": "ask"
   },
-  "instructions": ["AGENTS.md", "AI.md", "CHANGELOG.md",  "docs/*.md"]
+  "instructions": ["AGENTS.md", "AI.md", "docs/*.md"]
 }

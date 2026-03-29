@@ -18,7 +18,7 @@ Contributions are welcome. This guide should stay current as the tools evolve â€
 ```bash
 # 1. Fork the repo on GitHub
 # 2. Clone your fork
-git clone https://github.com/plamen5rov/vibe-coding-playbook.git
+git clone https://github.com/YOUR_USERNAME/vibe-coding-playbook.git
 cd vibe-coding-playbook
 
 # 3. Create a branch

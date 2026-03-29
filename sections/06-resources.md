@@ -39,12 +39,12 @@ Curated links for vibe coding with OpenCode and Claude Code. URLs verified as of
 | How to write a good CLAUDE.md | <https://www.builder.io/blog/claude-md-guide>{target="_blank" rel="noopener"} | Builder.io guide |
 | awesome-opencode | <https://github.com/awesome-opencode/awesome-opencode>{target="_blank" rel="noopener"} | Plugins, themes, agents |
 | Keep a Changelog | <https://keepachangelog.com>{target="_blank" rel="noopener"} | CHANGELOG.md format standard |
-| OpenCode releases | New features, breaking changes | <https://github.com/anomalyco/opencode/releases>{target="_blank" rel="noopener"} |
-| Anthropic news | Claude Code announcements | <https://www.anthropic.com/news>{target="_blank" rel="noopener"} |
-| Claude Code changelog | Detailed release notes | <https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md>{target="_blank" rel="noopener"} |
-| r/ClaudeAI | Community tips, issue reports | <https://www.reddit.com/r/ClaudeAI/>{target="_blank" rel="noopener"} |
-| r/vibecoding | General community discussion | <https://www.reddit.com/r/vibecoding/>{target="_blank" rel="noopener"} |
-| Anthropic on X | Real-time announcements | <https://x.com/AnthropicAI>{target="_blank" rel="noopener"} |
+| OpenCode releases | <https://github.com/anomalyco/opencode/releases>{target="_blank" rel="noopener"} | New features, breaking changes |
+| Anthropic news | <https://www.anthropic.com/news>{target="_blank" rel="noopener"} | Claude Code announcements |
+| Claude Code changelog | <https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md>{target="_blank" rel="noopener"} | Detailed release notes |
+| r/ClaudeAI | <https://www.reddit.com/r/ClaudeAI/>{target="_blank" rel="noopener"} | Community tips, issue reports |
+| r/vibecoding | <https://www.reddit.com/r/vibecoding/>{target="_blank" rel="noopener"} | General community discussion |
+| Anthropic on X | <https://x.com/AnthropicAI>{target="_blank" rel="noopener"} | Real-time announcements |
 | Claude Code settings examples (feiskyer) | <https://github.com/feiskyer/claude-code-settings>{target="_blank" rel="noopener"} | Real-world `.claude/settings.json` examples |
 | Claude Code best practices (shanraisshan) | <https://github.com/shanraisshan/claude-code-best-practice>{target="_blank" rel="noopener"} | Curated tips and workflow patterns |
 | Claude Code workflows (shinpr) | <https://github.com/shinpr/claude-code-workflows>{target="_blank" rel="noopener"} | Opinionated workflow scripts and helpers |

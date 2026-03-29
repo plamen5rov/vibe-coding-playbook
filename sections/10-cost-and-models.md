@@ -54,9 +54,9 @@ Not every task needs the most expensive model.
 
 | Task | Recommended model |
 | --- | --- |
-| Planning, exploration | Cheap model (Haiku, GPT-3.5) |
+| Planning, exploration | Cheap model (Haiku, GPT-4o-mini) |
 | Writing simple code | Mid-tier (Sonnet, GPT-4o) |
-| Complex architecture, debugging | Premium (Opus, GPT-4) |
+| Complex architecture, debugging | Premium (Opus, GPT-4o) |
 | Writing tests | Mid-tier |
 | Refactoring | Mid-tier |
 | Reading and explaining code | Mid-tier |
@@ -173,11 +173,11 @@ Use local models (Ollama) with Qwen2.5-Coder or CodeLlama. Quality is decent for
 
 ### For maximum capability
 
-Claude Opus or GPT-4 (current premium tiers). Use for complex architecture, debugging, or when the task is high-value.
+Claude Opus or GPT-4o (current premium tiers). Use for complex architecture, debugging, or when the task is high-value.
 
 ### For speed
 
-Use Haiku or GPT-3.5 for quick tasks where capability matters less than response time.
+Use Haiku or GPT-4o-mini for quick tasks where capability matters less than response time.
 
 ---
 
@@ -201,9 +201,9 @@ Signs you can downgrade:
 
 | Model tier | Examples | Best for |
 | --- | --- | --- |
-| Cheap | Haiku, GPT-3.5, Qwen2.5-Coder 7B | Planning, simple tasks |
-| Mid-tier | Sonnet, GPT-4o, GPT-4o-mini | Most coding tasks |
-| Premium | Opus, GPT-4 | Complex architecture, debugging |
+| Cheap | Haiku, GPT-4o-mini, Qwen2.5-Coder 7B | Planning, simple tasks |
+| Mid-tier | Sonnet, GPT-4o | Most coding tasks |
+| Premium | Opus | Complex architecture, debugging |
 
 **Rule of thumb:** Start with mid-tier. Upgrade when you hit limitations. Downgrade when the task is simple.
 

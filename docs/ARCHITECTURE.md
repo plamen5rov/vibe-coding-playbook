@@ -6,7 +6,7 @@
 /docs        → AI instruction files (rules, conventions, tasks, project goals)
 /.ai         → AI behavior control (agents, prompts, rules)
 /sections    → guide chapters (the actual published content)
-/template    → starter project template for any vibe-coding project [Phase 1]
+/starter-template → starter project template for any vibe-coding project [Phase 1]
 /examples    → real implementation examples [Phase 2]
 ```
 

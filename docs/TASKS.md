@@ -2,18 +2,11 @@
 
 ## 🔥 Current Focus
 
-- [ ] Write guide sections (sections/ directory)
-- [ ] Complete starter template
-
-## 🚧 In Progress
-
-- [ ] Add OpenCode workflow guide
-- [ ] Add Claude Code workflow guide
+- [ ] Create first example project
 
 ## 📌 Next
 
-- [ ] Create first example project
-- [ ] Add "common mistakes" section
+- [ ] Add video walkthroughs
 
 ## ✅ Done
 
@@ -29,9 +22,13 @@
 - [x] Create starter-template/ directory
 - [x] Write all 6 guide sections from ai_answers synthesis
 - [x] Write full README.md with ToC and How to Contribute
+- [x] Add OpenCode workflow guide (sections 03, 04, 05)
+- [x] Add Claude Code workflow guide (sections 03, 04, 05)
+- [x] Write sections 07-10 (prompt engineering, debugging, project types, cost/models)
+- [x] Add "common mistakes" section in 03
+- [x] Add CONTRIBUTING.md guide
+- [x] Add CHANGELOG.md and template to starter-template/
 
 ## 🧠 Ideas
 
 - Add video walkthroughs
-- Add "common mistakes" section
-- Add CHANGELOG.md template to starter-template/

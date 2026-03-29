@@ -9,11 +9,11 @@ All 10 AI models surveyed agree on this: **create the GitHub repo first, then cl
 ```bash
 # Option A: GitHub CLI (recommended)
 gh repo create my-project --private
-git clone https://github.com/yourname/my-project.git{target="_blank" rel="noopener"}
+git clone https://github.com/yourname/my-project.git
 cd my-project
 
 # Option B: Create on GitHub.com, then:
-git clone https://github.com/yourname/my-project.git{target="_blank" rel="noopener"}
+git clone https://github.com/yourname/my-project.git
 cd my-project
 ```
 

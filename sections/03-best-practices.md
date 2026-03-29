@@ -79,7 +79,7 @@ hardcoded values that should be env vars, and missing tests.
 Be concise. List issues as checkboxes.
 ```
 
-Both OpenCode and Claude Code support this format. See `docs/CONVENTIONS.md` for OpenCode-specific frontmatter options.
+Both OpenCode and Claude Code support this format. See the OpenCode docs for agent and command frontmatter options.
 
 ---
 
@@ -144,7 +144,7 @@ claude mcp add github
 
 ## Logging changes — CHANGELOG.md
 
-`CHANGELOG.md` is the standard. Use the [Keep a Changelog](https://keepachangelog.com){target="_blank" rel="noopener"}{target="_blank" rel="noopener"} format and instruct the agent to maintain it.
+`CHANGELOG.md` is the standard. Use the [Keep a Changelog](https://keepachangelog.com){target="_blank" rel="noopener"} format and instruct the agent to maintain it.
 
 Add to `AGENTS.md`:
 

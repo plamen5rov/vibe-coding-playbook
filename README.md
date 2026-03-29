@@ -128,7 +128,7 @@ cp -r starter-template/. /path/to/your/new-project/
 
 Contributions are welcome. This guide should stay current as the tools evolve — sections need updating, new tools emerge, and real-world experience improves the advice.
 
-See [`CONTRIBUTING.md`](CONTRIBUTING.md){target="_blank" rel="noopener"} for full guidelines, ways to help, and the PR workflow.
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) for full guidelines, ways to help, and the PR workflow.
 
 ---
 
