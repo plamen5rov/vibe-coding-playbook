@@ -1,9 +1,12 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "color": {
-    "build": "#7BF707",
-    "warning": "#F78B07",
-    "plan": "#F78B07"
+  "agent": {
+    "build": {
+      "color": "#7BF707"
+    },
+    "plan": {
+      "color": "#F2AF07"
+    }
   },
   "permission": {
     "read": "allow",
