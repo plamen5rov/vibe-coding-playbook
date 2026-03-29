@@ -63,4 +63,4 @@ Never commit `.env`. Only `.env.example` belongs in the repo.
 
 ## License
 
-[MIT / Apache 2.0 / etc.] — see [LICENSE](LICENSE).
+MIT — see [LICENSE](LICENSE).

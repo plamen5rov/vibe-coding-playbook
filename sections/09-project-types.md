@@ -1,5 +1,7 @@
 # Project Types
 
+![Header](../pictures/09-project-types.png)
+
 Different projects need different setups. This section shows you how to start each type correctly.
 
 ---

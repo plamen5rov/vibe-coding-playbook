@@ -1,5 +1,7 @@
 # Debugging with Agents
 
+![Header](../pictures/08-debugging-with-agents.png)
+
 The agent will produce bugs. So will you. This section shows you how to debug effectively when working with an AI.
 
 ---

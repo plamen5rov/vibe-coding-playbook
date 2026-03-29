@@ -1,5 +1,7 @@
 # Prompt Engineering
 
+![Header](../pictures/07-prompt-engineering.png)
+
 Your prompts are the interface between your brain and the AI. Write them well, and the agent delivers. Write them poorly, and you get guesswork.
 
 This section teaches you to write prompts that get results.

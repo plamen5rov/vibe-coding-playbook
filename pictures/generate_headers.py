@@ -7,7 +7,7 @@ import os
 # Configuration
 WIDTH = 1200
 HEIGHT = 400
-OUTPUT_DIR = "/home/bluedragon/CODE/opencode/vibe-coding-playbook/pictures"
+OUTPUT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Color palette - modern dark theme with accent colors
 COLORS = {

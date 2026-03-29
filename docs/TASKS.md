@@ -1,6 +1,6 @@
 # Tasks
 
-## 🔥 Current Focus
+## 📋 Roadmap
 
 - [ ] Create first example project
 

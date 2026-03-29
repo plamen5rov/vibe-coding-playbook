@@ -1,5 +1,7 @@
 # Cost and Models
 
+![Header](../pictures/10-cost-and-models.png)
+
 API costs add up fast if you're not paying attention. This section shows you how to manage costs while getting good results.
 
 ---
@@ -56,7 +58,7 @@ Not every task needs the most expensive model.
 | --- | --- |
 | Planning, exploration | Cheap model (Haiku, GPT-4o-mini) |
 | Writing simple code | Mid-tier (Sonnet, GPT-4o) |
-| Complex architecture, debugging | Premium (Opus, GPT-4o) |
+| Complex architecture, debugging | Premium (Opus) |
 | Writing tests | Mid-tier |
 | Refactoring | Mid-tier |
 | Reading and explaining code | Mid-tier |
@@ -173,7 +175,7 @@ Use local models (Ollama) with Qwen2.5-Coder or CodeLlama. Quality is decent for
 
 ### For maximum capability
 
-Claude Opus or GPT-4o (current premium tiers). Use for complex architecture, debugging, or when the task is high-value.
+Claude Opus (current premium tier). Use for complex architecture, debugging, or when the task is high-value.
 
 ### For speed
 
@@ -209,4 +211,4 @@ Signs you can downgrade:
 
 ---
 
-← [Previous: Project Types](09-project-types.md)
+← [Previous: Project Types](09-project-types.md) | [Back to README →](../README.md)

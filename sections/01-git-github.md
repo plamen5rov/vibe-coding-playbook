@@ -60,7 +60,7 @@ API_KEY=sk-abc123...
 SECRET_TOKEN=supersecret
 ```
 
-**Security note:** Even if `.env` is in `.gitignore`, some agents may still read it if they have file access. In OpenCode, the `opencode-ignore` plugin can explicitly block the agent from reading specific files. In Claude Code, use `deny` rules in `.claude/settings.json`.
+**Security note:** Even if `.env` is in `.gitignore`, some agents may still read it if they have file access. In OpenCode, use the permission system to deny file reads: set `"read": "deny"` in `opencode.json`, or create a custom plugin. In Claude Code, use `deny` rules in `.claude/settings.json`.
 
 ---
 
