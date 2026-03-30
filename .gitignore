@@ -8,6 +8,11 @@ node_modules/
 *.key
 .ignore
 
+# AI tool — personal overrides only
+CLAUDE.local.md
+.opencode/config.local.json
+.claude/settings.local.json
+
 # OS
 .DS_Store
 Thumbs.db

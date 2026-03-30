@@ -1,14 +1,10 @@
 Loading the same session in tools like OpenCode or Claude Code is super important for keeping your AI "buddy" smart about your project, just like chatting with a friend who remembers everything you've said before. Starting fresh each time wipes that memory, making work slower and messier for newbies.
-
 ## Why Sessions Matter
 Sessions act like a shared notebook where the AI stores your chat history, code changes, tool uses (like file edits or tests), and project learnings. Resuming the same one lets the AI pick up exactly where you left off, remembering past fixes, decisions, and even optimizations like pruned tools in OpenCode's DCP system. Without it, the AI acts like it has short-term memory loss, re-explaining basics every time. [opencode](https://opencode.ai)
-
 ## What Happens in Same Session
 The AI builds deep context over time—your code style, bugs fixed, tests run—which helps it give better suggestions and avoid repeats. OpenCode persists pruning history (what tools to skip) across restarts in the same session via local files, saving tokens and speed. Claude Code snapshots files for easy undos and keeps conversation flowing smoothly. [lzw](https://lzw.me/docs/opencodedocs/Opencode-DCP/opencode-dynamic-context-pruning/advanced/state-persistence/index.html)
-
 ## Risks of New Sessions
 A new session starts blank: no chat history, no prior tool results, no custom learnings—just the basic project files and CLAUDE.md/OpenCode defaults. The AI might redo analysis, forget your preferences, or make repeated mistakes, like re-pruning the same tools in OpenCode or misinterpreting priorities in Claude Code. It wastes time and frustrates beginners, as you'll explain everything again. [code.claude](https://code.claude.com/docs/en/how-claude-code-works)
-
 ## Best Newbie Tips
 - Always resume with commands like `claude --continue` or OpenCode's session load to stay consistent. [code.claude](https://code.claude.com/docs/en/how-claude-code-works)
 - Use CLAUDE.md (Claude) or persistent instructions for must-remember rules that carry over sessions.

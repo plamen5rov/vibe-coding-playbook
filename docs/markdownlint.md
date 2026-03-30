@@ -23,10 +23,10 @@ EOF
 
 ```bash
 # Lint every Markdown file
-markdownlint-cli2 '**/*.md' '!**/node_modules/**/*.md'
+markdownlint-cli2 '**/*.md' '!**/node_modules/**/*.md' '!**/ai_answers/**/*.md'
 
 # Auto-fix what can be fixed safely
-markdownlint-cli2 --fix '**/*.md' '!**/node_modules/**/*.md'
+markdownlint-cli2 --fix '**/*.md' '!**/node_modules/**/*.md' '!**/ai_answers/**/*.md'
 
 # Lint a single file when iterating
 markdownlint-cli2 docs/CONVENTIONS.md

@@ -9,6 +9,8 @@
     "node_modules/**",
     "**/node_modules",
     ".opencode/node_modules",
-    ".opencode/node_modules/**"
+    ".opencode/node_modules/**",
+    "ai_answers",
+    "ai_answers/**"
   ]
 }
