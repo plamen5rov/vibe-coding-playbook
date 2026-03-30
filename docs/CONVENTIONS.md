@@ -66,6 +66,7 @@ Every section file in `sections/` must follow this pattern:
 
 ### README.md
 
+- Every `##` heading in README.md must have a trailing emoji that matches its purpose
 - Add an entry in the `## Guide` section with: link, emoji, one-line description
 - Do **not** change the README header image (`pictures/README.png`)
 

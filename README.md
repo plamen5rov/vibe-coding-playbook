@@ -49,7 +49,7 @@ That's it. Read section 0 first, then proceed through the guide in order.
 
 ---
 
-## Guide
+## Guide 📖
 
 ### [0. What is Vibe Coding?](sections/00-what-is-vibe-coding.md) 🔰
 
@@ -136,7 +136,7 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md) for full guidelines, ways to help, and 
 
 ---
 
-## Project structure
+## Project structure 🗂️
 
 ```text
 vibe-coding-playbook/
