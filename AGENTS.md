@@ -25,42 +25,7 @@
 
 ## 3. Build / Lint / Test Commands
 
-This repo currently holds Markdown documentation, so linting is the main enforcement mechanism.
-
-### 3.1 Markdownlint Setup
-
-```bash
-npm install -g markdownlint-cli2
-
-cat > .markdownlint.json <<'EOF'
-{
-  "default": true,
-  "MD013": false,
-  "MD033": false,
-  "MD041": false
-}
-EOF
-```
-
-- `MD013` (line length) is off to keep snippets readable.
-- `MD033` (inline HTML) is off for future embeds.
-- `MD041` is off so files can start with comments or metadata.
-
-### 3.2 Linting Commands
-
-```bash
-# Lint every Markdown file
-markdownlint-cli2 '**/*.md' '!**/node_modules/**/*.md'
-
-# Auto-fix what can be fixed safely
-markdownlint-cli2 --fix '**/*.md' '!**/node_modules/**/*.md'
-
-# Lint a single file when iterating
-markdownlint-cli2 docs/CONVENTIONS.md
-```
-
-- Run linting before and after substantial edits.
-- When a rule cannot be satisfied, explain why in your summary.
+For markdownlint setup and commands, read @docs/markdownlint.md.
 
 ### 3.3 Git Hygiene
 
@@ -106,10 +71,7 @@ git commit -m "Describe the actual change"
 
 ### 4.4 Markdown Formatting
 
-- Use fenced code blocks with language tags for every snippet.
-- Bullets for lists, checkboxes for tasks (`- [ ] item`).
-- Tables only when data benefits from grid layout.
-- Emojis convey state: 🔥 current, 🚧 in-progress, ✅ done, 📌 queued, ❌ anti-pattern.
+For formatting rules, read @docs/markdown-formatting.md.
 
 ### 4.5 Example Blocks
 
@@ -127,38 +89,7 @@ git commit -m "Describe the actual change"
 
 ## 5. General Coding Guidelines (for future examples)
 
-- Keep code samples copy-paste ready and runnable.
-- Use 2-space indentation for JS/TS/JSON and 4 spaces for Python.
-- Prefer descriptive names over clever abbreviations.
-- Add comments only when the intent is not obvious.
-- Always include basic error checks even in snippets.
-
-### 5.1 Code Examples: Bad vs Good
-
-```javascript
-// ❌ Bad: clever but cryptic
-const f = (x) => x.reduce((a, b) => a + b, 0);
-
-// ✅ Good: explicit and beginner-friendly
-function calculateTotal(numbers) {
-  let sum = 0;
-  for (const number of numbers) {
-    sum += number;
-  }
-  return sum;
-}
-```
-
-```python
-# ❌ Bad: swallows errors
-data = json.loads(raw)
-
-# ✅ Good: guards against invalid input
-try:
-    data = json.loads(raw)
-except json.JSONDecodeError as exc:
-    raise ValueError("Invalid JSON payload") from exc
-```
+For code examples and guidelines, read @docs/coding-guidelines.md.
 
 ## 6. Workflow Rules
 
@@ -214,33 +145,4 @@ except json.JSONDecodeError as exc:
 
 ## 10. OpenCode Commands
 
-Custom commands live in `.opencode/commands/`. The file name becomes the command name.
-
-| Command | File | Description |
-| --- | --- | --- |
-| `/push` | `.opencode/commands/push.md` | Stage, commit, and push pending changes |
-
-### Adding Custom Commands
-
-Create a markdown file in `.opencode/commands/<name>.md`:
-
-```markdown
----
-description: Brief description of what the command does
----
-
-The prompt template sent to the LLM when the command runs.
-
-Use $ARGUMENTS for positional parameters.
-Use !\`command\` to inject shell output.
-Use @filename to include file content.
-```
-
-Options (frontmatter):
-
-- `description` - Shown in TUI command list
-- `agent` - Which agent should run it
-- `model` - Override default model
-- `subtask` - Force subagent invocation
-
-Built-in commands: `/init`, `/undo`, `/redo`, `/share`, `/help`
+For custom command reference, read @docs/opencode-commands.md.
