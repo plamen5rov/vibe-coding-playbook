@@ -25,7 +25,7 @@ When a section says "all 10 AI models surveyed agree", that is literally what ha
 - 2026-03-30 — new section added: "Roadmap"
 - 2026-03-30 — new section added: "Managing Sessions"
 - 2026-03-26 — new sections added: "Prompt Engineering", "Debugging with Agents", "Project Types", "Cost and Models"
-- 2026-03-20 — initial guide published: sections 01–06 + starter template
+- 2026-03-26 — initial guide published: sections 01–06 + starter template
 
 [Full changelog →](CHANGELOG.md)
 
