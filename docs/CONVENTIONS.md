@@ -68,6 +68,7 @@ Every section file in `sections/` must follow this pattern:
 
 - Every `##` heading in README.md must have a trailing emoji that matches its purpose
 - Add an entry in the `## Guide` section with: link, emoji, one-line description
+- Add an entry at the top of the `## Updates` block using the format: `YYYY-MM-DD — brief description`. Keep the list to 3–5 entries; remove the oldest when adding beyond the cap.
 - Do **not** change the README header image (`pictures/README.png`)
 
 ### TASKS.md
