@@ -211,4 +211,4 @@ Signs you can downgrade:
 
 ---
 
-← [Previous: Project Types](09-project-types.md) | [Back to README →](../README.md)
+← [Previous: Project Types](09-project-types.md) | [Next: Managing Sessions →](11-session-management.md)

@@ -95,6 +95,10 @@ How to start different projects — web app, API, CLI tool, script, library. Sta
 
 Managing API costs, choosing the right model for the task, local vs cloud trade-offs, cost-saving strategies.
 
+### [11. Managing Sessions](sections/11-session-management.md) 🔁
+
+Resume, fork, and revert sessions — when to continue, when to branch, and how to recover from a bad run.
+
 ---
 
 ## Starter Template 📂

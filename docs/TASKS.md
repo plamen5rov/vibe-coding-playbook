@@ -28,6 +28,8 @@
 - [x] Add "common mistakes" section in 03
 - [x] Add CONTRIBUTING.md guide
 - [x] Add CHANGELOG.md and template to starter-template/
+- [x] Write section 11 (session management)
+- [x] Generate header images for sections 07-11
 
 ## 🧠 Ideas
 

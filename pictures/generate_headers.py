@@ -437,11 +437,226 @@ def generate_whatis_header():
     img.save(f"{OUTPUT_DIR}/00-what-is-vibe-coding.png")
 
 
-if __name__ == "__main__":
-    print("Generating header images...")
+def generate_prompt_engineering_header():
+    """Header for Prompt Engineering section."""
+    img = Image.new("RGB", (WIDTH, HEIGHT), COLORS["bg"])
+    draw = ImageDraw.Draw(img)
 
-    generate_readme_header()
-    print("✓ README.png")
+    create_gradient_bg(draw, WIDTH, HEIGHT)
+    draw_decorative_circles(draw, WIDTH, HEIGHT)
+
+    font_title = load_font(56)
+    font_subtitle = load_font(28)
+
+    title = "Prompt Engineering"
+    subtitle = "Write prompts that get results"
+
+    bbox = draw.textbbox((0, 0), title, font=font_title)
+    w = bbox[2] - bbox[0]
+
+    draw.text(
+        ((WIDTH - w) // 2, HEIGHT // 2 - 30),
+        title,
+        font=font_title,
+        fill=COLORS["text"],
+    )
+    draw.text(
+        ((WIDTH - w) // 2, HEIGHT // 2 + 40),
+        subtitle,
+        font=font_subtitle,
+        fill=COLORS["accent2"],
+    )
+
+    # Draw chat bubble icon
+    cx, cy = 150, HEIGHT // 2
+    draw.rounded_rectangle(
+        [cx - 40, cy - 30, cx + 40, cy + 15],
+        radius=10,
+        outline=COLORS["accent2"],
+        width=3,
+    )
+    draw.polygon(
+        [cx - 10, cy + 15, cx - 25, cy + 35, cx + 5, cy + 15],
+        fill=COLORS["accent2"],
+    )
+
+    img.save(f"{OUTPUT_DIR}/07-prompt-engineering.png")
+
+
+def generate_debugging_header():
+    """Header for Debugging with Agents section."""
+    img = Image.new("RGB", (WIDTH, HEIGHT), COLORS["bg"])
+    draw = ImageDraw.Draw(img)
+
+    create_gradient_bg(draw, WIDTH, HEIGHT)
+    draw_decorative_circles(draw, WIDTH, HEIGHT)
+
+    font_title = load_font(56)
+    font_subtitle = load_font(28)
+
+    title = "Debugging with Agents"
+    subtitle = "Fix bugs with AI help"
+
+    bbox = draw.textbbox((0, 0), title, font=font_title)
+    w = bbox[2] - bbox[0]
+
+    draw.text(
+        ((WIDTH - w) // 2, HEIGHT // 2 - 30),
+        title,
+        font=font_title,
+        fill=COLORS["text"],
+    )
+    draw.text(
+        ((WIDTH - w) // 2, HEIGHT // 2 + 40),
+        subtitle,
+        font=font_subtitle,
+        fill=COLORS["accent4"],
+    )
+
+    # Draw bug icon
+    cx, cy = 150, HEIGHT // 2
+    draw.ellipse(
+        [cx - 25, cy - 25, cx + 25, cy + 25],
+        outline=COLORS["accent4"],
+        width=3,
+    )
+    # Antennae
+    draw.line([cx - 10, cy - 25, cx - 20, cy - 45], fill=COLORS["accent4"], width=3)
+    draw.line([cx + 10, cy - 25, cx + 20, cy - 45], fill=COLORS["accent4"], width=3)
+    # Legs
+    draw.line([cx - 25, cy - 10, cx - 40, cy - 15], fill=COLORS["accent4"], width=2)
+    draw.line([cx - 25, cy + 10, cx - 40, cy + 15], fill=COLORS["accent4"], width=2)
+    draw.line([cx + 25, cy - 10, cx + 40, cy - 15], fill=COLORS["accent4"], width=2)
+    draw.line([cx + 25, cy + 10, cx + 40, cy + 15], fill=COLORS["accent4"], width=2)
+
+    img.save(f"{OUTPUT_DIR}/08-debugging-with-agents.png")
+
+
+def generate_project_types_header():
+    """Header for Project Types section."""
+    img = Image.new("RGB", (WIDTH, HEIGHT), COLORS["bg"])
+    draw = ImageDraw.Draw(img)
+
+    create_gradient_bg(draw, WIDTH, HEIGHT)
+    draw_decorative_circles(draw, WIDTH, HEIGHT)
+
+    font_title = load_font(56)
+    font_subtitle = load_font(28)
+
+    title = "Project Types"
+    subtitle = "Start the right way"
+
+    bbox = draw.textbbox((0, 0), title, font=font_title)
+    w = bbox[2] - bbox[0]
+
+    draw.text(
+        ((WIDTH - w) // 2, HEIGHT // 2 - 30),
+        title,
+        font=font_title,
+        fill=COLORS["text"],
+    )
+    draw.text(
+        ((WIDTH - w) // 2, HEIGHT // 2 + 40),
+        subtitle,
+        font=font_subtitle,
+        fill=COLORS["accent3"],
+    )
+
+    # Draw stacked blocks icon
+    for i, offset in enumerate([0, 30, 60]):
+        draw.rectangle(
+            [110 + offset, HEIGHT // 2 - 40, 180 + offset, HEIGHT // 2 + 40],
+            outline=COLORS["accent3"],
+            width=2,
+        )
+
+    img.save(f"{OUTPUT_DIR}/09-project-types.png")
+
+
+def generate_cost_models_header():
+    """Header for Cost and Models section."""
+    img = Image.new("RGB", (WIDTH, HEIGHT), COLORS["bg"])
+    draw = ImageDraw.Draw(img)
+
+    create_gradient_bg(draw, WIDTH, HEIGHT)
+    draw_decorative_circles(draw, WIDTH, HEIGHT)
+
+    font_title = load_font(56)
+    font_subtitle = load_font(28)
+
+    title = "Cost and Models"
+    subtitle = "Manage API costs"
+
+    bbox = draw.textbbox((0, 0), title, font=font_title)
+    w = bbox[2] - bbox[0]
+
+    draw.text(
+        ((WIDTH - w) // 2, HEIGHT // 2 - 30),
+        title,
+        font=font_title,
+        fill=COLORS["text"],
+    )
+    draw.text(
+        ((WIDTH - w) // 2, HEIGHT // 2 + 40),
+        subtitle,
+        font=font_subtitle,
+        fill=COLORS["accent1"],
+    )
+
+    # Draw dollar sign icon
+    cx, cy = 150, HEIGHT // 2
+    font_icon = load_font(60)
+    draw.text((cx - 15, cy - 35), "$", font=font_icon, fill=COLORS["accent1"])
+
+    img.save(f"{OUTPUT_DIR}/10-cost-and-models.png")
+
+
+def generate_session_management_header():
+    """Header for Managing Sessions section."""
+    img = Image.new("RGB", (WIDTH, HEIGHT), COLORS["bg"])
+    draw = ImageDraw.Draw(img)
+
+    create_gradient_bg(draw, WIDTH, HEIGHT)
+    draw_decorative_circles(draw, WIDTH, HEIGHT)
+
+    font_title = load_font(56)
+    font_subtitle = load_font(28)
+
+    title = "Managing Sessions"
+    subtitle = "Resume, fork, and revert"
+
+    bbox = draw.textbbox((0, 0), title, font=font_title)
+    w = bbox[2] - bbox[0]
+
+    draw.text(
+        ((WIDTH - w) // 2, HEIGHT // 2 - 30),
+        title,
+        font=font_title,
+        fill=COLORS["text"],
+    )
+    draw.text(
+        ((WIDTH - w) // 2, HEIGHT // 2 + 40),
+        subtitle,
+        font=font_subtitle,
+        fill=COLORS["accent2"],
+    )
+
+    # Draw branching/fork icon
+    cx, cy = 150, HEIGHT // 2
+    draw.line([cx - 40, cy, cx, cy], fill=COLORS["accent2"], width=3)
+    draw.line([cx, cy, cx + 30, cy - 30], fill=COLORS["accent2"], width=3)
+    draw.line([cx, cy, cx + 30, cy + 30], fill=COLORS["accent2"], width=3)
+    # Dots at branch points
+    draw.ellipse([cx - 8, cy - 8, cx + 8, cy + 8], fill=COLORS["accent2"])
+    draw.ellipse([cx + 22, cy - 38, cx + 38, cy - 22], fill=COLORS["accent2"])
+    draw.ellipse([cx + 22, cy + 22, cx + 38, cy + 38], fill=COLORS["accent2"])
+
+    img.save(f"{OUTPUT_DIR}/11-session-management.png")
+
+
+if __name__ == "__main__":
+    print("Generating section header images...")
+    print("(Skipping README.png — do not modify)\n")
 
     generate_whatis_header()
     print("✓ 00-what-is-vibe-coding.png")
@@ -463,5 +678,20 @@ if __name__ == "__main__":
 
     generate_resources_header()
     print("✓ 06-resources.png")
+
+    generate_prompt_engineering_header()
+    print("✓ 07-prompt-engineering.png")
+
+    generate_debugging_header()
+    print("✓ 08-debugging-with-agents.png")
+
+    generate_project_types_header()
+    print("✓ 09-project-types.png")
+
+    generate_cost_models_header()
+    print("✓ 10-cost-and-models.png")
+
+    generate_session_management_header()
+    print("✓ 11-session-management.png")
 
     print(f"\nAll images saved to {OUTPUT_DIR}/")
