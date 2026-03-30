@@ -654,6 +654,51 @@ def generate_session_management_header():
     img.save(f"{OUTPUT_DIR}/11-session-management.png")
 
 
+def generate_roadmap_header():
+    """Header for Roadmap section."""
+    img = Image.new("RGB", (WIDTH, HEIGHT), COLORS["bg"])
+    draw = ImageDraw.Draw(img)
+
+    create_gradient_bg(draw, WIDTH, HEIGHT)
+    draw_decorative_circles(draw, WIDTH, HEIGHT)
+
+    font_title = load_font(56)
+    font_subtitle = load_font(28)
+
+    title = "Roadmap"
+    subtitle = "Future expansions"
+
+    bbox = draw.textbbox((0, 0), title, font=font_title)
+    w = bbox[2] - bbox[0]
+
+    draw.text(
+        ((WIDTH - w) // 2, HEIGHT // 2 - 30),
+        title,
+        font=font_title,
+        fill=COLORS["text"],
+    )
+    draw.text(
+        ((WIDTH - w) // 2, HEIGHT // 2 + 40),
+        subtitle,
+        font=font_subtitle,
+        fill=COLORS["accent3"],
+    )
+
+    # Draw road/map icon
+    cx, cy = 150, HEIGHT // 2
+    # Road
+    draw.rectangle([cx - 50, cy + 20, cx + 50, cy + 40], fill=COLORS["subtle"])
+    # Lane markings
+    for i in range(-40, 41, 20):
+        draw.rectangle([cx + i - 2, cy + 25, cx + i + 2, cy + 35], fill=COLORS["text"])
+    # Map pin
+    draw.ellipse([cx - 10, cy - 30, cx + 10, cy - 10], fill=COLORS["accent3"])
+    draw.line([cx, cy - 30, cx, cy - 50], fill=COLORS["accent3"], width=3)
+    draw.ellipse([cx - 4, cy - 54, cx + 4, cy - 46], fill=COLORS["accent3"])
+
+    img.save(f"{OUTPUT_DIR}/12-roadmap.png")
+
+
 if __name__ == "__main__":
     print("Generating section header images...")
     print("(Skipping README.png — do not modify)\n")
@@ -693,5 +738,8 @@ if __name__ == "__main__":
 
     generate_session_management_header()
     print("✓ 11-session-management.png")
+
+    generate_roadmap_header()
+    print("✓ 12-roadmap.png")
 
     print(f"\nAll images saved to {OUTPUT_DIR}/")

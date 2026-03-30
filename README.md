@@ -109,6 +109,10 @@ Managing API costs, choosing the right model for the task, local vs cloud trade-
 
 Resume, fork, and revert sessions — when to continue, when to branch, and how to recover from a bad run.
 
+### [12. Roadmap](sections/12-roadmap.md) 🗺️
+
+A forward-looking guide highlighting planned expansions to cover advanced concepts, practical tutorials, team workflows, and responsible AI usage for vibe coding beginners.
+
 ---
 
 ## Starter Template 📂
