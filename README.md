@@ -168,3 +168,11 @@ vibe-coding-playbook/
 ```
 
 The `docs/` directory contains files for AI agents working on this repo — rules, conventions, tasks. The actual guide lives in `sections/`.
+
+---
+
+## Support this Project ⭐
+
+If you find this Vibe Coding Playbook helpful, please consider giving it a ⭐ on GitHub! Your support motivates continued improvements and new features.
+
+[Star this repo on GitHub](https://github.com/plamen5rov/vibe-coding-playbook)
