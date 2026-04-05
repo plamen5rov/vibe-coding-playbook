@@ -176,3 +176,7 @@ The `docs/` directory contains files for AI agents working on this repo — rule
 If you find this Vibe Coding Playbook helpful, please consider giving it a ⭐ on GitHub! Your support motivates continued improvements and new features.
 
 [Star this repo on GitHub](https://github.com/plamen5rov/vibe-coding-playbook)
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/chart?repos=plamen5rov/vibe-coding-playbook&type=timeline&logscale&legend=top-left)](https://www.star-history.com/?repos=plamen5rov%2Fvibe-coding-playbook&type=timeline&logscale=&legend=top-left)
